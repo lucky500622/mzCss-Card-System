@@ -11,8 +11,13 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Card: typeof import('./components/Card.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TopBar: typeof import('./components/TopBar.vue')['default']
+    VanIcon: typeof import('vant/es')['Icon']
+    VanSwipe: typeof import('vant/es')['Swipe']
+    VanSwipeItem: typeof import('vant/es')['SwipeItem']
     VanTabbar: typeof import('vant/es')['Tabbar']
     VanTabbarItem: typeof import('vant/es')['TabbarItem']
   }
