@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Index from '@/views/Layout/index.vue'
 import Home from '@/views/Layout/home.vue'
+import Card from '@/views/Layout/card.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -14,7 +15,13 @@ const router = createRouter({
       children: [
         {
           path: '/home',
+          name: 'home',
           component: Home
+        },  
+        {
+          path: '/card',
+          name: 'card',
+          component: Card
         }
       ]
     },
